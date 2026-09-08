@@ -1,0 +1,7 @@
+name: Secret Scanning
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  gitleaks:
+    uses: r2capital/github-actions-templates/.github/workflows/gitleaks-reusable.yml@v1
